@@ -55,7 +55,7 @@ router.route('/exercise3/:name/:productId')
             productDescpService.getProductURL(req.params.productId),
             productDescpService.getProductName(req.params.productId),
             productPriceService.getProductPrice(req.params.productId),
-            function (resulthelloWorld, productDescpServiceURL, productDescpServiceName,productPriceServicePrice ) {
+            function (resulthelloWorld, productDescpServiceURL, productDescpServiceName, productPriceServicePrice ) {
 
                 var ex3_response_message = {
                     "hello": resulthelloWorld.result,
